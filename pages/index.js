@@ -22,12 +22,12 @@ export default function Home({allPostsData}) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>I dfj ej kf jek jdk jfaksdjf kasj faej kfj f</p>
-        <p>(esto es solamente una simulación)</p>
-        <p>[ora weyyy!]</p>
+        <p>[This is a Blog having some interesting entries regarding NextJS and some cool stuff]</p>
+        <p>(esto es solamente una simulación - esto es solamente una simulación - esto es solamente una simulación)</p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
+        <h2 className={utilStyles.headingLg}
+        style={{color:'gray'}}>Blog</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({id, date, title}) => (
             <li className={utilStyles.listItem} key={id}>
